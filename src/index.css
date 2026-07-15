@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Great+Vibes&family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-amiri: "Amiri", serif;
+  --font-playfair: "Playfair Display", serif;
+}
+
+/* LIGHT MODE STYLING OVERRIDES ("الوضع النهاري") */
+#app-root-container.light {
+  background-color: #F8FAFC !important; /* slate-50 */
+  color: #1E293B !important; /* slate-800 */
+}
+
+/* Sidebar overrides */
+#app-root-container.light aside {
+  background-color: #FFFFFF !important;
+  border-right-color: #E2E8F0 !important;
+  color: #1E293B !important;
+}
+
+#app-root-container.light aside h2 {
+  color: #0F172A !important; /* slate-900 */
+}
+
+#app-root-container.light aside .text-\[\#8E9299\] {
+  color: #64748B !important; /* slate-500 */
+}
+
+#app-root-container.light aside .border-white\/10 {
+  border-color: #E2E8F0 !important;
+}
+
+#app-root-container.light aside .text-slate-200 {
+  color: #334155 !important;
+}
+
+#app-root-container.light aside .bg-white\/5 {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+#app-root-container.light #mobile-theme-toggle,
+#app-root-container.light #desktop-theme-toggle {
+  color: #475569 !important;
+}
+
+/* Navigation overrides */
+#app-root-container.light #sidebar-nav button:not(.bg-\[\#D4AF37\]) {
+  color: #64748B !important;
+}
+
+#app-root-container.light #sidebar-nav button:not(.bg-\[\#D4AF37\]):hover {
+  background-color: #F1F5F9 !important;
+  color: #0F172A !important;
+}
+
+/* Card overrides */
+#app-root-container.light .bg-\[\#141417\],
+#app-root-container.light .bg-\[\#0F0F12\],
+#app-root-container.light .bg-\[rgba\(20\2c 20\2c 23\2c 0\.8\)\] {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  color: #1E293B !important;
+}
+
+#app-root-container.light .bg-gradient-to-br.from-\[\#141417\].to-\[\#0F0F12\] {
+  background-image: linear-gradient(to bottom right, #FFFFFF, #F8FAFC) !important;
+  border-color: #E2E8F0 !important;
+}
+
+#app-root-container.light .bg-gradient-to-r.from-\[\#D4AF37\]\/10.to-\[\#141417\] {
+  background-image: linear-gradient(to right, #FEF9C3, #FFFFFF) !important;
+  border-color: #FDE047 !important;
+}
+
+/* Text overrides */
+#app-root-container.light .text-white {
+  color: #0F172A !important;
+}
+
+#app-root-container.light .text-\[\#8E9299\] {
+  color: #64748B !important;
+}
+
+#app-root-container.light .text-\[\#E0E0E0\] {
+  color: #334155 !important;
+}
+
+#app-root-container.light .text-\[\#D4AF37\] {
+  color: #A16207 !important; /* more readable dark gold */
+}
+
+/* Keep text white in buttons or gold badges */
+#app-root-container.light button.bg-gradient-to-r .text-white,
+#app-root-container.light .bg-gradient-to-r .text-white,
+#app-root-container.light button.bg-gradient-to-r,
+#app-root-container.light .bg-\[\#D4AF37\] .text-white,
+#app-root-container.light .bg-\[\#D4AF37\] .text-black,
+#app-root-container.light button.bg-\[\#D4AF37\] {
+  color: #1E2937 !important; /* dark text for contrast on gold button */
+}
+
+#app-root-container.light button.bg-white\/5 {
+  background-color: #FFFFFF !important;
+  color: #1E293B !important;
+  border-color: #E2E8F0 !important;
+}
+
+#app-root-container.light button.bg-white\/5:hover {
+  background-color: #F8FAFC !important;
+}
+
+/* Borders and lines */
+#app-root-container.light .border-white\/10 {
+  border-color: #E2E8F0 !important;
+}
+
+#app-root-container.light .border-white\/5 {
+  border-color: #F1F5F9 !important;
+}
+
+/* Level badge specific */
+#app-root-container.light #cefr-badge-container {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03) !important;
+}
+
+#app-root-container.light #cefr-badge-container .text-white {
+  color: #1E293B !important;
+}
+
+/* Background list presets and tabs */
+#app-root-container.light .bg-\[\#0F0F12\],
+#app-root-container.light .bg-\[\#0A0A0B\] {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+#app-root-container.light #daily-target-presets button {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+}
+
+#app-root-container.light #daily-target-presets button.bg-\[\#D4AF37\]\/15 {
+  background-color: #FEF9C3 !important;
+  border-color: #EAB308 !important;
+  color: #A16207 !important;
+}
+
+#app-root-container.light select,
+#app-root-container.light textarea,
+#app-root-container.light input {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+#app-root-container.light select:focus,
+#app-root-container.light textarea:focus,
+#app-root-container.light input:focus {
+  border-color: #D4AF37 !important;
+  outline: none;
+}
+
+/* Specific elements for Evaluator & Practice Hub */
+#app-root-container.light .bg-\[\#D4AF37\]\/5 {
+  background-color: #FEFDF6 !important;
+  border-color: #FEF08A !important;
+}
+
+#app-root-container.light .bg-\[\#D4AF37\]\/10 {
+  background-color: #FEF9C3 !important;
+  border-color: #FEF08A !important;
+  color: #854D0E !important;
+}
+
+#app-root-container.light .hover:border-\[\#D4AF37\]\/50:hover {
+  border-color: rgba(212, 175, 55, 0.6) !important;
+}
+
+#app-root-container.light .bg-white\/5 {
+  background-color: #F1F5F9 !important;
+  border-color: #E2E8F0 !important;
+}
+
+#app-root-container.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+/* Speech recognition recording indicator pulse */
+#app-root-container.light .bg-red-500\/10 {
+  background-color: #FEE2E2 !important;
+  color: #DC2626 !important;
+}
+
+/* Modal overlay */
+#app-root-container.light #daily-goal-celebration-overlay {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+}
+
+#app-root-container.light #daily-goal-celebration-overlay .text-white {
+  color: #FFFFFF !important;
+}
+
+#app-root-container.light #daily-goal-celebration-overlay .text-\[\#8E9299\] {
+  color: #E2E8F0 !important;
+}
+
+/* Circular Progress Light Mode Overrides */
+#app-root-container.light #daily-goal-circular-progress circle:nth-child(1) {
+  stroke: #F1F5F9 !important;
+}
+
+#app-root-container.light #daily-goal-circular-progress circle:nth-child(2) {
+  stroke: #E2E8F0 !important;
+}
+
+#app-root-container.light #daily-goal-circular-progress circle:nth-child(3) {
+  stroke: rgba(234, 179, 8, 0.2) !important; /* light yellow-gold glow aura */
+}
+
+#app-root-container.light #daily-goal-circular-progress circle:nth-child(4) {
+  stroke: #CA8A04 !important; /* solid accessible yellow-gold progress */
+}
+
+/* D3 Progression Chart Light Mode Overrides */
+#app-root-container.light #progression-chart-container svg {
+  background-color: transparent !important;
+}
+
+#app-root-container.light #progression-chart-container line.stroke-white\/5 {
+  stroke: #E2E8F0 !important;
+}
+
+#app-root-container.light #progression-chart-container line.stroke-white\/10 {
+  stroke: #CBD5E1 !important;
+}
+
+#app-root-container.light #progression-chart-container path.stroke-\[\#D4AF37\] {
+  stroke: #CA8A04 !important; /* solid rich gold */
+}
+
+#app-root-container.light #progression-chart-container circle.stroke-\[\#D4AF37\] {
+  stroke: #CA8A04 !important;
+  fill: #FFFFFF !important;
+}
+
+#app-root-container.light #progression-chart-container text {
+  fill: #64748B !important;
+}
+
+/* Theme Transition Rules for Smooth Cross-fade */
+#app-root-container,
+#app-root-container aside,
+#app-root-container .bg-\[\#141417\],
+#app-root-container .bg-\[\#0F0F12\],
+#app-root-container .bg-\[rgba\(20\2c 20\2c 23\2c 0\.8\)\],
+#app-root-container select,
+#app-root-container textarea,
+#app-root-container input,
+#app-root-container .border-white\/10,
+#app-root-container .border-white\/5,
+#app-root-container .text-white,
+#app-root-container .text-\[\#8E9299\],
+#app-root-container .text-\[\#E0E0E0\],
+#app-root-container .text-\[\#D4AF37\],
+#app-root-container button {
+  transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1), 
+              color 450ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 450ms cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 450ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* View Transitions API Styling - Smooth screen-wide cross-fade */
+::view-transition-old(root) {
+  animation: 400ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out;
+}
+::view-transition-new(root) {
+  animation: 400ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+

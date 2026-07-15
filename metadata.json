@@ -1,0 +1,6 @@
+{
+  "name": "CEFR English Assessor",
+  "description": "An intelligent English language learning and adaptive placement portal aligned with CEFR standards. Includes dynamic content generation, a 20-question adaptive assessment, and a multi-criteria Speaking & Writing evaluator.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
